@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand Colors */
+:root {
+  --brand-primary: #1e40af; /* Example: Tailwind blue-800 */
+  --brand-secondary: #f59e42; /* Example: Custom orange */
+  --brand-accent: #16a34a; /* Example: Tailwind green-600 */
+  --brand-bg: #f8fafc; /* Example: Tailwind slate-50 */
+  --brand-text: #0f172a; /* Example: Tailwind slate-900 */
+}
+
+/* Custom global styles */
+body {
+  background-color: var(--brand-bg);
+  color: var(--brand-text);
+  font-family: theme('fontFamily.sans');
+}
+
+a {
+  color: var(--brand-primary);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--brand-accent);
+}
+
+::selection {
+  background: var(--brand-primary);
+  color: #fff;
+}
